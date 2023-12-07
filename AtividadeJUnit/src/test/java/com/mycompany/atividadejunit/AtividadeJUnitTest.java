@@ -12,27 +12,23 @@ public class AtividadeJUnitTest {
     void testMetodoAdicao() {
         assertEquals(5, teste.metodoAdicao(2, 3));
         assertEquals(-1, teste.metodoAdicao(-2, 1));
-        // Adicione mais casos de teste conforme necessário
     }
 
     @Test
     void testMetodoSubtr() {
         assertEquals(1, teste.metodoSubtr(4, 3));
         assertEquals(5, teste.metodoSubtr(8, 3));
-        // Adicione mais casos de teste conforme necessário
     }
 
     @Test
     void testMetodoDivis() {
         assertEquals(2, teste.metodoDivis(6, 3));
-        assertEquals(0, teste.metodoDivis(0, 5));
-        // Adicione mais casos de teste conforme necessário
+        assertEquals(1, teste.metodoDivis(5, 5));
     }
 
     @Test
     void testMetodoMultipl() {
         assertEquals(6, teste.metodoMultipl(2, 3));
-        assertEquals(0, teste.metodoMultipl(5, 0));
-        // Adicione mais casos de teste conforme necessário
+        assertEquals(8, teste.metodoMultipl(4, 2));
     }
 }
